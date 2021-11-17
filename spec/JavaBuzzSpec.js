@@ -18,4 +18,10 @@ describe('Javabuzz', function() {
       expect(javabuzz.isDivisibleByFive(5)).toBe(true);
     });
   });
+  describe('knows when a number is NOT', function() {
+    it('divisible by 5', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFive(1)).toBe(false);
+    });
+  });
 });
